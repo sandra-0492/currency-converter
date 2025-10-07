@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Kalkulator walut</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    <link href="css/style.css" rel="stylesheet" >
+    <link href="css/container.css" rel="stylesheet" >
+    <link href="css/form.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form__header">Kalkulator walut</h1>
+      <form class="js-form form">
+        <p>
+          <label>
+            <span class="form__labelText"> Kwota w złotówkach*: </span>
+            <input
+              placeholder="Wpisz kwotę w złótówkach"
+              class="form__field js-amount"
+              type="number"
+              required
+              step="0.01"
+            >
+          </label>
+        </p>
+        <p>
+          <label>
+            <span class="form__labelText"> Waluta: </span>
+            <select class="form__field js-currency">
+              <option value="EUR">Euro</option>
+              <option value="USD">Dolar amerykański</option>
+              <option value="CAD">Dolar kanadyjski</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <button class="form__button">Przelicz</button>
+        </p>
+        <p class="form__info">
+          Kursy pochodzą ze strony NBP z tabeli nr
+          192/A/NBP/2025 z dnia 03-10-2025
+        </p>
+        <p class="js-result form__result"></p>
+      </form>
+    </div>
+  </body>
+</html>
