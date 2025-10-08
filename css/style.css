@@ -11,4 +11,6 @@ html {
 body {
     font-family: "Athiti", sans-serif;
     margin: 0;
+    background-image: url("../images/currency-converter.png");
+    background-size: 950px;
 }
