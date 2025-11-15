@@ -40,7 +40,6 @@
 
     formElement.addEventListener("submit", onFormSubmit);
 
-    welcome();
   };
 
   init();
