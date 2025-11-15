@@ -1,8 +1,4 @@
 {
-  const welcome = () => {
-    console.log("Hello everyone😀");
-  };
-
   const calculateResult = (amount, currency) => {
     const rateEUR = 4.2559;
     const rateUSD = 3.6253;
